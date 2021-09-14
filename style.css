@@ -1,0 +1,471 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Roboto', cursive;;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container video
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+   height: 100%;
+   width: 100%;
+   pointer-events: none;
+}
+.container .content
+{
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.container .content h1
+{
+    margin: 0;
+    padding: 0;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: #ffff;
+}
+.container .content h1 span
+{
+    color: orangered;
+}
+.container .content p
+{
+    
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background: orangered;
+    color: #fff;
+    margin: 2rem 0;
+}
+.container .content img
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.container .content .navbar
+{
+    display: flex;
+    position: absolute;
+    top: -12rem;
+}
+.container .content .navbar .nav_items
+{
+    display: flex;
+    list-style: none;
+    margin-top: 1rem;
+    margin-left: 5rem;
+}
+ .nav_items a:active
+{
+    color: orangered;
+}
+.container .content .navbar .nav_items .btn
+{
+    width: 8rem;
+    background: orangered;
+    border-radius:2rem;
+    border: none;
+    font-size: 1rem;
+    color: black;
+}
+.container .content .navbar .nav_items .btn:hover
+{
+    border: 2px solid orangered;
+    background: transparent;
+    color: orangered;
+}
+.container .content .navbar .logo
+{
+    display: flex;
+}
+.container .content .navbar .logo h6
+{
+    margin-top:1rem;
+}
+.container .content .navbar .nav_items a
+{
+    text-transform: uppercase;
+    text-decoration: none;
+    margin:0.6rem;
+}
+.container .content .navbar .nav_items a:hover
+{
+    color: orangered;
+}
+.container .content .navbar .nav_items a:active
+{
+    color: orangered;
+}
+
+/* type */
+.type
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: black;
+    
+}
+
+.type img
+{
+    height:300px;
+    width: 400px;
+    margin:1.5rem;
+}
+
+/* about */
+.about
+{
+    background:#16191e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.about .left img
+{
+    border-radius:40%;
+}
+.about .right .upper h1
+{
+    font-size: 3rem;
+    color: orangered;
+    text-transform: uppercase;
+}
+.about .right .upper p
+{
+    color: gray;
+}
+.about .right .lower
+{
+    display: flex;
+    margin-top: 3rem;
+}
+.about .right .lower i
+{
+    font-size: 3rem;
+    color: orangered;
+}
+.about .right .lower h1
+{
+    margin: 1rem 0;
+    text-transform: uppercase;
+    /* font-size: 1.5rem; */
+}
+.about .right .lower p
+{
+    color: gray;
+}
+/* gallary */
+.gallary .pics
+{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+    background: black;
+}
+
+.gallary h1
+{
+    background: black;
+    color: orangered;
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+}
+.gallary img
+{
+    height: 200px;
+    width: 200px;
+    margin: 0;
+}
+/* blogs */
+section.blog_wrapper
+{
+   background: black;
+}
+section.blog_wrapper h1
+{
+    color: orangered;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 2rem;
+}
+section .card_wrapper
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} 
+section .card_wrapper .card
+{
+    margin: 1.5rem;
+}
+section .card_wrapper .card h2
+{
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+section .card_wrapper .card p
+{
+    font-size: 0.8rem;
+    color: gray;
+    margin-bottom: 0.6rem;
+}
+section .card_wrapper .card button
+{
+    margin: 0.7rem 0;
+    width: 10rem;
+    color:orangered;
+    background:transparent;
+    border: 2px solid orangered;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size:1rem;
+}
+section .card_wrapper .card button:hover
+{
+    background: orangered;
+    color: black;
+}
+/* trainers */
+section.train
+{
+    background-image: url("./img/bg.png");
+    background-size: cover;
+    
+}
+section.train h1
+{
+    text-transform: uppercase;
+    color: orangered;
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+}
+section .trainers h1
+{
+    color: orangered;
+}
+section .trainers .content
+{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
+section .trainers .content .txt
+{
+    background: #fff;
+    width: 10rem;
+    text-align: center;
+    margin:-1rem 1.3rem;
+    z-index: 1;
+}
+section .trainers .content .txt h1
+{
+    color:black;
+    padding-top: 0.6rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+}
+section .trainers .content .txt h5
+{
+    color:gray;
+    padding:0.5rem;
+    padding-top: 0;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+section .trainers .content .t1
+{
+    margin: 4rem;
+}
+/* footer */
+footer
+{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("./img/training-828726_1920.jpg");
+    background-size: cover;
+}
+footer .upper
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 8rem;
+    margin:0 3rem;
+}
+footer .upper .case
+{
+    margin: 2rem;
+}
+footer .upper h4
+{
+    color: orangered;
+    margin:1.5rem 0;
+    text-transform: uppercase;
+}
+footer .upper li
+{
+    list-style: none;
+    line-height: 2rem;
+    text-transform: uppercase;
+    font-size:0.8rem;
+}
+footer .upper p
+{
+    line-height: 2rem;
+    font-size: 0.8rem;
+}
+footer .upper input
+{
+    height: 2rem;
+    outline: none;
+    color: #fff;
+    background: rgb(54, 54, 54);
+    border: none;
+}
+footer .upper button
+{
+    height: 2rem;
+    background:orangered;
+    border: none;
+    margin: 0.5rem 0;
+}
+footer .upper button:hover
+{
+    background: transparent;
+    color: orangered;
+}
+footer .upper a:hover
+{
+    color: orangered;
+}
+footer .upper a
+{
+    text-decoration: none;
+    padding: 1rem;
+}
+footer .lower
+{
+    background: orangered;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    color: gray;
+}
+footer .lower .left
+{
+    margin: 0 1rem;
+}
+footer .lower .right
+{
+    margin-left: 50rem;
+}
+footer .lower .right i
+{
+    margin:0 1rem;
+}
+/* responsive */
+@media(max-width:500px)
+{
+
+    .container .content .navbar
+    {
+        display: flex;
+        position: absolute;
+        top: -15rem;
+    }
+    .container .content .logo
+    {
+        flex-direction: column;
+    }
+    .container .content .logo img
+    {
+        height: 35px;
+        width: 35px;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    .container .content .navbar .nav_items
+    {
+        font-size: 0.6rem;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .container .content .navbar .nav_items .btn
+    {
+        width: 6rem;
+        height: 2rem;
+        margin-left: 2rem;
+        margin-top:-0.5rem;
+    }
+    .container .content h1
+    {
+        font-size: 3rem;
+    }  
+    .type
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: -1.3rem;
+    } 
+    .about .left img
+    {
+        width: 98vw;
+    }  
+    .about
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .about .right
+    {
+        margin-left: 1.5rem;
+    }
+    .gallary .pics
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+    section .card_wrapper
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    section .trainers .content
+    {
+       
+        grid-template-columns:1fr;
+    }
+    section .trainers .content .t1
+    {
+        margin:2rem 9rem ;
+    }
+    footer .upper
+    {
+        grid-template-columns: 1fr ;
+    }
+    footer .lower .right
+{
+    margin-left: 3rem;
+}
+footer .lower .right i
+{
+    margin:0 0.2rem;
+}
+
+}
